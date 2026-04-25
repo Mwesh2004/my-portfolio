@@ -1,127 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beryl's Portfolio</title>
+  <title>Beryl — Freelance Writer & Content Creator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=cormorant:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+<body class="dark">
 
-<body>
+  <!-- PARTICLE CANVAS -->
+  <canvas id="particles-canvas"></canvas>
 
-  <!-- NAVBAR -->
-  <nav>
-    <div class="nav-logo">Beryl ✦</div>
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">Beryl.</div>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <button id="toggle-btn">☀️ Light Mode</button>
+    <button id="theme-btn">☀ Light</button>
   </nav>
 
-  <!-- HERO SECTION -->
-  <header>
-    <div class="hero-content">
-      <h1>Hi, I'm <span class="highlight">Beryl</span> 👋</h1>
-      <h2 id="subtitle"></h2>
-      <p class="hero-desc">I help businesses grow through compelling content and smart digital strategy.</p>
-      <div class="hero-buttons">
-        <a href="#contact" class="btn-primary">Hire Me</a>
-        <a href="#services" class="btn-secondary">My Services</a>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="glow-orb glow-1"></div>
+    <div class="glow-orb glow-2"></div>
+    <div class="glow-orb glow-3"></div>
+
+    <p class="hero-eyebrow">Freelance Writer &amp; Content Creator</p>
+    <h1 class="hero-name">
+      <span class="name-plain">Hi, I'm </span><br>
+      <span class="name-grad">Beryl.</span>
+    </h1>
+    <p class="hero-tagline"> I help businesses grow through compelling content and smart digital strategy.</p>
+    <div class="typing-wrapper">
+      <span id="typing-text"></span><span id="cursor"></span>
+    </div>
+    <div class="hero-ctas">
+      <a href="#contact" class="btn-primary">Hire Me</a>
+      <a href="#services" class="btn-outline">My Services</a>
+    </div>
+
+    <div class="scroll-indicator">
+      <span></span>
+
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="divider"></div>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <p class="section-label reveal">About Me</p>
+    <div class="neon-line reveal"></div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 class="section-heading reveal">Words that work.<br>Strategy that sells.</h2>
+        <p class="section-body reveal">
+          I'm a <strong>Business Administration student</strong> pursuing a Bachelor of Commerce,
+          complemented by an ICDL Certificate and a completed Fundamentals of Digital Marketing course.
+           I am a passionate tech developer focused on building modern, responsive, and user-friendly web applications. 
+    I enjoy turning ideas into real digital experiences using clean and efficient code.
+          I'm passionate about content creation, helping brands tell their story, and crafting
+          academic writing with laser focus on detail. Currently active on
+          <strong class="accent">Fiverr</strong> and <strong class="accent">Upwork</strong>.
+        </p>
+      </div>
+      <div class="stats-col reveal-right">
+        <div class="stat-card">
+          <div class="stat-num">5+</div>
+          <div class="stat-label">Services Offered</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Commitment to Quality</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Platforms Active</div>
+        </div>
       </div>
     </div>
-    <div class="hero-waves">
-      <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg">
-        <path fill="#0a1628" d="M0,60 C360,100 1080,0 1440,60 L1440,100 L0,100 Z"/>
-      </svg>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="divider"></div>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <p class="section-label reveal">What I Do</p>
+    <div class="neon-line reveal"></div>
+    <h2 class="section-heading reveal">Crafted for clarity.<br>Built to convert.</h2>
+    <div class="services-grid">
+      <div class="service-card reveal-card delay-1">
+        <span class="service-icon">✍️</span>
+        <div class="service-arrow">→</div>
+        <h3>Blog Writing</h3>
+        <p>Engaging, well-researched blog posts that attract and retain readers — and keep them coming back.</p>
+      </div>
+      <div class="service-card reveal-card delay-2">
+        <span class="service-icon">📢</span>
+        <div class="service-arrow">→</div>
+        <h3>Copywriting</h3>
+        <p>Persuasive copy that converts visitors into loyal customers with the right message at the right moment.</p>
+      </div>
+      <div class="service-card reveal-card delay-3">
+        <span class="service-icon">🔍</span>
+        <div class="service-arrow">→</div>
+        <h3>SEO Writing</h3>
+        <p>Keyword-optimized content that ranks high on search engines and drives consistent organic traffic.</p>
+      </div>
+      <div class="service-card reveal-card delay-4">
+        <span class="service-icon">📱</span>
+        <div class="service-arrow">→</div>
+        <h3>Social Media Content</h3>
+        <p>Creative posts and captions that boost engagement and grow your brand's online presence.</p>
+      </div>
+      <div class="service-card reveal-card delay-5">
+        <span class="service-icon">📚</span>
+        <div class="service-arrow">→</div>
+        <h3>Academic Writing</h3>
+        <p>Well-researched, properly formatted academic papers crafted with precision and attention to every detail.</p>
+      </div>
+      <div class="service-card reveal-card delay-6">
+        <span class="service-icon">🕶️</span>
+        <div class="service-arrow">→</div>
+        <h3>Ghostwriting</h3>
+        <p>Professional ghostwriting services to help you share your story and expertise with the world.</p>
+      </div>
     </div>
-  </header>
+  </section>
 
-  <!-- MAIN CONTENT -->
-  <main>
+  <!-- DIVIDER -->
+  <div class="divider"></div>
 
-    <!-- ABOUT -->
-    <section id="about">
-      <div class="section-icon">🌊</div>
-      <h3>About Me</h3>
-      <p>I am a <strong>Business Administration student</strong> pursuing a Bachelor of Commerce, 
-      complemented by an ICDL Certificate and a completed Fundamentals of Digital Marketing course. 
-      I am passionate about content creation and helping brands tell their story effectively.
-    I am also an avid Academic Writer with laser focus to details.</p>
-      <div class="stats">
-        <div class="stat">
-          <h4>4+</h4>
-          <p>Services Offered</p>
-        </div>
-        <div class="stat">
-          <h4>100%</h4>
-          <p>Commitment</p>
-        </div>
-        <div class="stat">
-          <h4>2</h4>
-          <p>Platforms Active</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section id="services">
-      <div class="section-icon">💼</div>
-      <h3>My Services</h3>
-      <div class="services-grid">
-        <div class="service-card">
-          <span>✍️</span>
-          <h4>Blog Writing</h4>
-          <p>Engaging, well-researched blog posts that attract and retain readers.</p>
-        </div>
-        <div class="service-card">
-          <span>📢</span>
-          <h4>Copywriting</h4>
-          <p>Persuasive copy that converts visitors into loyal customers.</p>
-        </div>
-        <div class="service-card">
-          <span>🔍</span>
-          <h4>SEO Writing</h4>
-          <p>Keyword-optimized content that ranks high on search engines.</p>
-        </div>
-        <div class="service-card">
-          <span>📱</span>
-          <h4>Social Media Content</h4>
-          <p>Creative posts and captions that boost engagement and grow your brand.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <div class="section-icon">📬</div>
-      <h3>Contact Me</h3>
-      <p class="contact-intro">Ready to work together? Reach out and let's create something amazing!</p>
-      <form id="contact-form">
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <p class="section-label reveal">Get In Touch</p>
+    <div class="neon-line reveal"></div>
+    <h2 class="section-heading reveal">Let's create<br>something great.</h2>
+    <div class="contact-wrapper">
+      <form class="contact-form reveal-up" id="contact-form">
         <input type="text" id="name" placeholder="Your Name" required>
         <input type="email" id="email" placeholder="Your Email" required>
-        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit" class="btn-primary">Send Message 🚀</button>
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-primary full-width">Send Message →</button>
+        <div id="success-msg">🎉 Thanks! I'll get back to you soon.</div>
       </form>
-      <div class="contact-links">
-        <a href="tel:+254727 441 974" class="contact-badge">📞 Call Me</a>
-        <a href="https://www.upwork.com/freelancers/~015908371a0a01ad0c?mp_source=share" class="contact-badge">🌐 Upwork</a>
-        <a href="mailto:berylmunyao8@gmail.com" class="contact-badge">📧 Email</a>
-      </div>
-    </section>
 
-  </main>
+      <div class="contact-info reveal-right">
+        <p class="contact-intro">Ready to elevate your content game? Whether you need blog posts, SEO copy, or academic writing — I'm here to help.</p>
+        <div class="contact-links">
+          <a href="tel:+254727441974" class="contact-link">
+            <div class="link-icon">📞</div>
+            <div>
+              <div class="link-label">Call Me</div>
+              <div class="link-sub">+254 727 441 974</div>
+            </div>
+          </a>
+          <a href="mailto:berylmunyao8@gmail.com" class="contact-link">
+            <div class="link-icon">📧</div>
+            <div>
+              <div class="link-label">Email</div>
+              <div class="link-sub">berylmunyao8@gmail.com</div>
+            </div>
+          </a>
+          <a href="https://www.upwork.com/freelancers/~015908371a0a01ad0c?mp_source=share" target="_blank" rel="noopener" class="contact-link">
+            <div class="link-icon">🌐</div>
+            <div>
+              <div class="link-label">Upwork</div>
+              <div class="link-sub">View my profile</div>
+            </div>
+          </a>
+          <a href="https://www.fiverr.com/s/bdQer31" target="_blank" rel="noopener" class="contact-link">
+            <div class="link-icon">✦</div>
+            <div>
+              <div class="link-label">Fiverr</div>
+              <div class="link-sub">Order a gig</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>✦ Designed & Built by Beryl © 2026 ✦</p>
-    <p class="footer-sub">Freelance Writer & Content Creator</p>
+    <p class="footer-text">Designed &amp; Built by <span class="footer-name">Beryl</span> © 2026</p>
+    <p class="footer-sub">Freelance Writer &amp; Content Creator</p>
   </footer>
 
   <script src="script.js"></script>
-
 </body>
 </html>
