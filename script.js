@@ -159,15 +159,32 @@ document.querySelectorAll(
 ).forEach(el => revealObserver.observe(el));
 
 
-/* ── 5. CONTACT FORM ── */
+/* ── 5. CONTACT FORM — Formspree handles submission ── */
 const contactForm = document.getElementById('contact-form');
 const successMsg  = document.getElementById('success-msg');
 
-contactForm.addEventListener('submit', function (e) {
+contactForm.addEventListener('submit', async function (e) {
   e.preventDefault();
-  successMsg.style.display = 'block';
-  contactForm.reset();
-  setTimeout(() => { successMsg.style.display = 'none'; }, 5000);
+
+  const data = new FormData(contactForm);
+
+  try {
+    const response = await fetch('https://formspree.io/f/xwvaygpp', {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      successMsg.style.display = 'block';
+      contactForm.reset();
+      setTimeout(() => { successMsg.style.display = 'none'; }, 5000);
+    } else {
+      alert('Oops! Something went wrong. Please try emailing me directly at berylmunyao8@gmail.com');
+    }
+  } catch (error) {
+    alert('Oops! Something went wrong. Please try emailing me directly at berylmunyao8@gmail.com');
+  }
 });
 
 
