@@ -7,4 +7,5 @@ The platform highlights my technical abilities, including frontend and backend d
 The website features a fully responsive design optimised for desktop, tablet, and mobile screens. It includes sections such as an about me page, skills overview, project showcase with live demos and source code links, and a contact section for direct communication.
 
 This portfolio reflects my passion for building meaningful and visually appealing digital experiences, as well as my ongoing growth in software development. It is regularly updated as I learn new technologies and complete more projects.
+
 Beryl M.
