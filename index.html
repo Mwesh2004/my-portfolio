@@ -1,329 +1,790 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beryl — Freelance Writer, Content Creator & Web Designer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="BerylBytes — digital creative portfolio by Beryl Munyao."
+  />
+
+  <meta name="theme-color" content="#08090b" />
+
+  <title>BerylBytes — Beryl Munyao</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="dark">
 
-  <!-- PARTICLE CANVAS -->
-  <canvas id="particles-canvas"></canvas>
+<body>
 
-  <!-- NAV -->
-  <nav id="navbar">
-    <img src="images/logo.png" alt="Beryl Bytes Logo" class="nav-logo-img">
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button id="theme-btn">☀ Light</button>
-  </nav>
+  <!-- Background -->
+  <div class="noise"></div>
+  <div class="cursor-glow"></div>
 
-  <!-- HERO -->
-  <section id="hero">
-    <div class="glow-orb glow-1"></div>
-    <div class="glow-orb glow-2"></div>
-    <div class="glow-orb glow-3"></div>
+  <!-- NAVIGATION -->
+  <header class="nav">
 
-    <p class="hero-eyebrow">Freelance Writer &amp; Content Creator</p>
-    <h1 class="hero-name">
-      <span class="name-plain">Hi, I'm </span><br>
-      <span class="name-grad">Beryl.</span>
-    </h1>
-    <p class="hero-tagline">I help businesses grow through compelling content and smart digital strategy.</p>
-    <div class="typing-wrapper">
-      <span id="typing-text"></span><span id="cursor"></span>
-    </div>
-    <div class="hero-ctas">
-      <a href="#contact" class="btn-primary">Hire Me</a>
-      <a href="#services" class="btn-outline">My Services</a>
+    <a href="#top" class="brand">
+      <span class="brand-mark">B</span>
+
+      <span>
+        BERYL<span>BYTES</span>
+      </span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-status">
+      <i></i>
+      AVAILABLE FOR WORK
     </div>
 
-    <div class="scroll-indicator">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
+    <button class="menu-btn" aria-label="Open menu">
+      <span></span>
+      <span></span>
+    </button>
 
-  <!-- DIVIDER -->
-  <div class="divider"></div>
+  </header>
 
- <!-- ABOUT -->
-<section class="section" id="about">
-  <p class="section-label reveal">About Me</p>
-  <div class="neon-line reveal"></div>
 
-  <div class="about-grid">
-    <div class="about-text">
-      <h2 class="section-heading reveal">
-        Words that work.<br>
-        Strategy that sells.
-      </h2>
+  <main id="top">
 
-      <p class="section-body reveal">
-        I'm Beryl, a freelance writer, content creator, and aspiring digital
-        strategist with a passion for turning ideas into clear, engaging,
-        and purposeful content.
-      </p>
+    <!-- HERO -->
+    <section class="hero">
 
-      <p class="section-body reveal">
-        I'm currently pursuing a <strong>Bachelor of Commerce in
-        Business Administration</strong>, giving me a strong foundation in
-        business, marketing, communication, and strategic thinking. I also
-        hold an <strong>ICDL Certificate</strong> and have completed a
-        <strong>Fundamentals of Digital Marketing</strong> course.
-      </p>
+      <div class="hero-copy">
 
-      <p class="section-body reveal">
-        My work combines creativity with research and attention to detail.
-        Whether I'm writing a blog post, creating social media content,
-        developing SEO-focused copy, or working on a website, my goal is
-        always the same: <strong>create work that communicates clearly and
-        delivers results.</strong>
-      </p>
-
-      <p class="section-body reveal">
-        Beyond writing, I have an interest in <strong>web design, digital
-        marketing, branding, and technology</strong>. I enjoy learning new
-        tools and finding better ways to help individuals and businesses
-        build a stronger digital presence.
-      </p>
-
-      <div class="about-highlights reveal">
-        <div class="highlight">
-          <span class="highlight-icon">✦</span>
-          <div>
-            <strong>Creative</strong>
-            <p>Fresh ideas with a clear purpose.</p>
-          </div>
+        <div class="eyebrow">
+          <span>01</span>
+          DIGITAL CREATIVE / NAIROBI, KENYA
         </div>
 
-        <div class="highlight">
-          <span class="highlight-icon">⌁</span>
-          <div>
-            <strong>Research-Driven</strong>
-            <p>Content built on accuracy and understanding.</p>
-          </div>
-        </div>
+        <h1>
+          I build
+          <em>digital</em><br />
+          experiences<br />
+          with intent<span>.</span>
+        </h1>
 
-        <div class="highlight">
-          <span class="highlight-icon">◈</span>
-          <div>
-            <strong>Detail-Oriented</strong>
-            <p>Careful with quality, structure, and presentation.</p>
-          </div>
-        </div>
+        <p class="hero-lede">
+          I'm Beryl — a business-minded digital creative exploring the space
+          between technology, design, communication and cybersecurity.
+        </p>
 
-        <div class="highlight">
-          <span class="highlight-icon">↗</span>
-          <div>
-            <strong>Growth-Focused</strong>
-            <p>Focused on helping ideas and brands move forward.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+        <div class="hero-actions">
 
-    <div class="stats-col reveal-right">
-      <div class="stat-card">
-        <div class="stat-num">5+</div>
-        <div class="stat-label">Services Offered</div>
-      </div>
-
-      <div class="stat-card">
-        <div class="stat-num">100%</div>
-        <div class="stat-label">Commitment to Quality</div>
-      </div>
-
-      <div class="stat-card">
-        <div class="stat-num">2</div>
-        <div class="stat-label">Freelance Platforms</div>
-      </div>
-
-      <div class="stat-card">
-        <div class="stat-num">∞</div>
-        <div class="stat-label">Ideas to Create</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- EDUCATION & SKILLS -->
-  <div class="about-details">
-    <div class="detail-card reveal-card">
-      <span class="detail-number">01</span>
-      <h3>Education</h3>
-      <p>
-        <strong>Bachelor of Commerce — Business Administration</strong><br>
-        Currently pursuing my degree while developing practical skills in
-        business, marketing, communication, and entrepreneurship.
-      </p>
-    </div>
-
-    <div class="detail-card reveal-card delay-1">
-      <span class="detail-number">02</span>
-      <h3>Certifications</h3>
-      <p>
-        <strong>ICDL Certificate</strong><br>
-        Digital literacy and computer applications.
-      </p>
-      <p>
-        <strong>Fundamentals of Digital Marketing</strong><br>
-        Digital marketing principles, online presence, and audience growth.
-      </p>
-    </div>
-
-    <div class="detail-card reveal-card delay-2">
-      <span class="detail-number">03</span>
-      <h3>What I Bring</h3>
-      <p>
-        A combination of writing, business knowledge, digital skills,
-        creativity, research, and a genuine willingness to learn and
-        continuously improve.
-      </p>
-    </div>
-  </div>
-
-  <!-- CURRENTLY -->
-  <div class="currently-section reveal">
-    <p class="section-label">Currently</p>
-
-    <div class="currently-content">
-      <div>
-        <span class="currently-dot"></span>
-        <span>Available for freelance projects</span>
-      </div>
-
-      <div>
-        <span class="currently-dot"></span>
-        <span>Building digital experiences</span>
-      </div>
-
-      <div>
-        <span class="currently-dot"></span>
-        <span>Creating content that connects</span>
-      </div>
-
-      <div>
-        <span class="currently-dot"></span>
-        <span>Always learning &amp; improving</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <!-- DIVIDER -->
-  <div class="divider"></div>
-
-  <!-- SERVICES -->
-  <section class="section" id="services">
-    <p class="section-label reveal">What I Do</p>
-    <div class="neon-line reveal"></div>
-    <h2 class="section-heading reveal">Crafted for clarity.<br>Built to convert.</h2>
-    <div class="services-grid">
-      <div class="service-card reveal-card delay-1">
-        <span class="service-icon">✍️</span>
-        <div class="service-arrow">→</div>
-        <h3>Blog Writing</h3>
-        <p>Engaging, well-researched blog posts that attract and retain readers — and keep them coming back.</p>
-      </div>
-      <div class="service-card reveal-card delay-2">
-        <span class="service-icon">📢</span>
-        <div class="service-arrow">→</div>
-        <h3>Copywriting</h3>
-        <p>Persuasive copy that converts visitors into loyal customers with the right message at the right moment.</p>
-      </div>
-      <div class="service-card reveal-card delay-3">
-        <span class="service-icon">🔍</span>
-        <div class="service-arrow">→</div>
-        <h3>SEO Writing</h3>
-        <p>Keyword-optimized content that ranks high on search engines and drives consistent organic traffic.</p>
-      </div>
-      <div class="service-card reveal-card delay-4">
-        <span class="service-icon">📱</span>
-        <div class="service-arrow">→</div>
-        <h3>Social Media Content</h3>
-        <p>Creative posts and captions that boost engagement and grow your brand's online presence.</p>
-      </div>
-      <div class="service-card reveal-card delay-5">
-        <span class="service-icon">📚</span>
-        <div class="service-arrow">→</div>
-        <h3>Academic Writing</h3>
-        <p>Well-researched, properly formatted academic papers crafted with precision and attention to every detail.</p>
-      </div>
-      <div class="service-card reveal-card delay-6">
-        <span class="service-icon">🕶️</span>
-        <div class="service-arrow">→</div>
-        <h3>Ghostwriting</h3>
-        <p>Professional ghostwriting services to help you share your story and expertise with the world.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- DIVIDER -->
-  <div class="divider"></div>
-
-  <!-- CONTACT -->
-  <section class="section" id="contact">
-    <p class="section-label reveal">Get In Touch</p>
-    <div class="neon-line reveal"></div>
-    <h2 class="section-heading reveal">Let's create<br>something great.</h2>
-    <div class="contact-wrapper">
-      <form class="contact-form reveal-up" id="contact-form" action="https://formspree.io/f/xwvaygpp" method="POST">
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
-        <input type="email" id="email" name="email" placeholder="Your Email" required>
-        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn-primary full-width">Send Message →</button>
-        <div id="success-msg">🎉 Thanks! I'll get back to you soon. Beryl</div>
-      </form>
-
-      <div class="contact-info reveal-right">
-        <p class="contact-intro">Ready to elevate your content game? Whether you need blog posts, SEO copy, or academic writing — I'm here to help.</p>
-        <div class="contact-links">
-          <a href="tel:+254727441974" class="contact-link">
-            <div class="link-icon">📞</div>
-            <div>
-              <div class="link-label">Call Me</div>
-              <div class="link-sub">+254 727 441 974</div>
-            </div>
+          <a href="#work" class="btn btn-primary">
+            Explore work
+            <b>↘</b>
           </a>
-          <a href="mailto:berylmunyao8@gmail.com" class="contact-link">
-            <div class="link-icon">📧</div>
-            <div>
-              <div class="link-label">Email</div>
-              <div class="link-sub">berylmunyao8@gmail.com</div>
-            </div>
+
+          <a href="#contact" class="text-link">
+            Let's talk
+            <b>↗</b>
           </a>
-          <a href="https://www.upwork.com/freelancers/~015908371a0a01ad0c?mp_source=share" target="_blank" rel="noopener" class="contact-link">
-            <div class="link-icon">🌐</div>
-            <div>
-              <div class="link-label">Upwork</div>
-              <div class="link-sub">View my profile</div>
-            </div>
-          </a>
-          <a href="https://www.fiverr.com/s/bdQer31" target="_blank" rel="noopener" class="contact-link">
-            <div class="link-icon">✦</div>
-            <div>
-              <div class="link-label">Fiverr</div>
-              <div class="link-sub">Order a gig</div>
-            </div>
-          </a>
+
         </div>
+
+      </div>
+
+
+      <div class="hero-visual">
+
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+
+        <div class="hero-image-wrap">
+          <img
+            src="images/logo.png"
+            alt="BerylBytes logo"
+          />
+        </div>
+
+        <div class="hero-tag tag-top">
+          CREATIVE / 01
+        </div>
+
+        <div class="hero-tag tag-bottom">
+          WEB · DESIGN · SECURITY
+        </div>
+
+        <div class="scroll-note">
+          SCROLL TO EXPLORE
+          <span>↓</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- TICKER -->
+    <div class="ticker">
+      <div>
+        WEB DEVELOPMENT ✦ UI/UX ✦ DIGITAL CONTENT ✦ CYBERSECURITY ✦
+        BRANDING ✦ DIGITAL MARKETING ✦ BUSINESS ✦
+        WEB DEVELOPMENT ✦ UI/UX ✦ DIGITAL CONTENT ✦ CYBERSECURITY ✦
       </div>
     </div>
-  </section>
+
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+
+      <div class="section-head">
+        <span>02 / ABOUT</span>
+        <span>THE PERSON BEHIND THE BYTES</span>
+      </div>
+
+
+      <div class="about-grid">
+
+        <div>
+
+          <p class="kicker">
+            A LITTLE CONTEXT
+          </p>
+
+          <h2>
+            Business brain.<br />
+            <i>Creative hands.</i><br />
+            Tech curiosity.
+          </h2>
+
+        </div>
+
+
+        <div class="about-text">
+
+          <p>
+            I'm Beryl Munyao, a multidisciplinary digital creative with an
+            interest in technology, business, design and communication.
+          </p>
+
+          <p>
+            I am currently studying
+            <strong>Cybersecurity and CCNA through Cisco Networking Academy</strong>,
+            while developing practical experience in web development, UI/UX,
+            digital communication and technology.
+          </p>
+
+          <p>
+            My background also includes
+            <strong>Business Administration, ICDL digital skills and freelance
+            writing</strong>.
+            This gives me a combination of business thinking, communication
+            and technical curiosity.
+          </p>
+
+          <p>
+            I enjoy turning ideas into useful digital experiences that are
+            visually intentional, easy to understand and built with purpose.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="about-cards">
+
+        <article>
+          <span>01</span>
+
+          <h3>
+            Business Administration
+          </h3>
+
+          <p>
+            Business thinking, strategy, customer perspective and practical
+            digital problem solving.
+          </p>
+        </article>
+
+
+        <article>
+          <span>02</span>
+
+          <h3>
+            ICDL & Digital Skills
+          </h3>
+
+          <p>
+            Strong foundation in digital productivity, information handling
+            and everyday technology.
+          </p>
+        </article>
+
+
+        <article>
+          <span>03</span>
+
+          <h3>
+            Freelance Writer
+          </h3>
+
+          <p>
+            Writing, research, editing and turning ideas into clear digital
+            communication.
+          </p>
+        </article>
+
+
+        <article>
+          <span>04</span>
+
+          <h3>
+            Cybersecurity
+          </h3>
+
+          <p>
+            Currently studying Cybersecurity and CCNA through Cisco
+            Networking Academy.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- WORK -->
+    <section class="section work" id="work">
+
+      <div class="section-head">
+        <span>03 / SELECTED WORK</span>
+        <span>LIVE + IN PROGRESS</span>
+      </div>
+
+
+      <div class="work-intro">
+
+        <h2>
+          Things I've built<br />
+          <i>and am building.</i>
+        </h2>
+
+        <p>
+          Selected digital projects where design, business thinking and
+          technology meet.
+        </p>
+
+      </div>
+
+
+      <!-- THE UPGRADE -->
+      <article class="project">
+
+        <div class="project-meta">
+          <span>01 / LIVE</span>
+          <span>WEB PLATFORM</span>
+        </div>
+
+
+        <div class="project-body">
+
+          <div class="project-copy">
+
+            <p class="project-label">
+              THE UPGRADE
+            </p>
+
+            <h3>
+              A digital experience
+              designed to <i>move.</i>
+            </h3>
+
+            <p>
+              A live digital project focused on presenting a modern,
+              clear and engaging online experience.
+            </p>
+
+
+            <div class="chips">
+              <span>Web Development</span>
+              <span>UI/UX</span>
+              <span>Digital Product</span>
+            </div>
+
+
+            <a
+              href="https://the-upgrade.vercel.app/"
+              target="_blank"
+              rel="noopener"
+              class="project-link"
+            >
+              Visit The Upgrade
+              <b>↗</b>
+            </a>
+
+          </div>
+
+
+          <div class="project-art upgrade-art">
+
+            <div class="art-grid"></div>
+
+            <div class="floating-window">
+
+              <small>
+                THE UPGRADE
+              </small>
+
+              <strong>
+                LEVEL<br />
+                UP.
+              </strong>
+
+              <span>
+                01 — DIGITAL EXPERIENCE
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- BERYL PHARMACY -->
+      <article class="project">
+
+        <div class="project-meta">
+          <span>02 / IN PROGRESS</span>
+          <span>HEALTH TECH</span>
+        </div>
+
+
+        <div class="project-body">
+
+          <div class="project-art pharmacy-art">
+
+            <div class="pulse"></div>
+
+            <div class="health-card">
+
+              <small>
+                BERYL PHARMACY
+              </small>
+
+              <strong>
+                Care,<br />
+                connected.
+              </strong>
+
+              <span>
+                HEALTH · PHARMACY · DIGITAL
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="project-copy">
+
+            <p class="project-label">
+              BERYL PHARMACY
+            </p>
+
+            <h3>
+              Healthcare,<br />
+              reimagined <i>online.</i>
+            </h3>
+
+            <p>
+              A digital pharmacy and health experience currently in progress.
+              The preview is available so visitors can follow the direction
+              and evolution of the product.
+            </p>
+
+
+            <div class="chips">
+              <span>In Progress</span>
+              <span>Health Tech</span>
+              <span>UI/UX</span>
+            </div>
+
+
+            <a
+              href="https://preview--beryl-health-hub.lovable.app/"
+              target="_blank"
+              rel="noopener"
+              class="project-link"
+            >
+              Preview Beryl Pharmacy
+              <b>↗</b>
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </section>
+
+
+    <!-- CAPABILITIES -->
+    <section
+      class="section capabilities"
+      id="capabilities"
+    >
+
+      <div class="section-head">
+        <span>04 / CAPABILITIES</span>
+        <span>WHAT I BRING</span>
+      </div>
+
+
+      <div class="cap-grid">
+
+        <div class="cap-main">
+
+          <p class="kicker">
+            A MULTIDISCIPLINARY TOOLKIT
+          </p>
+
+          <h2>
+            One brain.<br />
+            <i>Many interfaces.</i>
+          </h2>
+
+        </div>
+
+
+        <div class="cap-list">
+
+          <div>
+            <b>01</b>
+            <strong>Web Development</strong>
+            <span>
+              Responsive websites · front-end · deployment
+            </span>
+          </div>
+
+
+          <div>
+            <b>02</b>
+            <strong>UI / UX Design</strong>
+            <span>
+              Interfaces · visual systems · user flows
+            </span>
+          </div>
+
+
+          <div>
+            <b>03</b>
+            <strong>Content & Writing</strong>
+            <span>
+              Copy · research · editing · digital storytelling
+            </span>
+          </div>
+
+
+          <div>
+            <b>04</b>
+            <strong>Digital Marketing</strong>
+            <span>
+              Campaign thinking · positioning · online presence
+            </span>
+          </div>
+
+
+          <div>
+            <b>05</b>
+            <strong>Cybersecurity</strong>
+            <span>
+              Security foundations · networking · CCNA studies
+            </span>
+          </div>
+
+
+          <div>
+            <b>06</b>
+            <strong>Business Thinking</strong>
+            <span>
+              Strategy · customer perspective · problem solving
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="credential">
+
+        <div class="credential-icon">
+          CYBER
+          <strong>CCNA</strong>
+        </div>
+
+        <div>
+
+          <span>
+            CURRENTLY STUDYING
+          </span>
+
+          <h3>
+            Cybersecurity + CCNA
+          </h3>
+
+          <p>
+            Cisco Networking Academy · building a stronger technical
+            foundation in networks, security and digital infrastructure.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section
+      class="section contact"
+      id="contact"
+    >
+
+      <div class="section-head">
+        <span>05 / CONTACT</span>
+        <span>LET'S MAKE SOMETHING USEFUL</span>
+      </div>
+
+
+      <div class="contact-grid">
+
+
+        <div class="contact-copy">
+
+          <p class="kicker">
+            HAVE A PROJECT IN MIND?
+          </p>
+
+          <h2>
+            Let's talk<br />
+            <i>about it.</i>
+          </h2>
+
+          <p>
+            Have a website, digital product, content project, creative idea
+            or collaboration in mind? Send me a message and I'll get back
+            to you.
+          </p>
+
+
+          <div class="contact-details">
+
+            <a href="mailto:berylmunyao8@gmail.com">
+
+              <span>EMAIL</span>
+
+              berylmunyao8@gmail.com ↗
+
+            </a>
+
+
+            <div>
+
+              <span>LOCATION</span>
+
+              Nairobi, Kenya
+
+            </div>
+
+
+            <div>
+
+              <span>STATUS</span>
+
+              Available for selected freelance work
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- FORMSPREE CONTACT FORM -->
+
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/xrpzyzkk"
+          method="POST"
+        >
+
+          <input
+            type="hidden"
+            name="_subject"
+            value="New BerylBytes portfolio enquiry"
+          />
+
+
+          <label>
+
+            <span>YOUR NAME</span>
+
+            <input
+              type="text"
+              name="name"
+              placeholder="Jane Doe"
+              required
+            />
+
+          </label>
+
+
+          <label>
+
+            <span>EMAIL ADDRESS</span>
+
+            <input
+              type="email"
+              name="email"
+              placeholder="jane@example.com"
+              required
+            />
+
+          </label>
+
+
+          <label>
+
+            <span>WHAT ARE YOU WORKING ON?</span>
+
+            <input
+              type="text"
+              name="project"
+              placeholder="Website, brand, content, collaboration..."
+              required
+            />
+
+          </label>
+
+
+          <label>
+
+            <span>MESSAGE</span>
+
+            <textarea
+              name="message"
+              rows="6"
+              placeholder="Tell me a little about the project..."
+              required
+            ></textarea>
+
+          </label>
+
+
+          <button
+            type="submit"
+            class="btn btn-primary submit-btn"
+          >
+            Send message
+            <b>↗</b>
+          </button>
+
+
+          <p class="form-note">
+            Your message is securely sent through Formspree.
+            I'll receive the enquiry by email.
+          </p>
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
 
   <!-- FOOTER -->
+
   <footer>
-    <p class="footer-text">Designed &amp; Built by <span class="footer-name">Beryl</span> © 2026</p>
-    <p class="footer-sub">Freelance Writer &amp; Content Creator</p>
+
+    <div class="footer-brand">
+
+      <span class="brand-mark">
+        B
+      </span>
+
+      <span>
+        BERYL<span>BYTES</span>
+      </span>
+
+    </div>
+
+
+    <p>
+      BERYL BYTES, POWERING MINDS, ONE BYTE AT A TIME.
+    </p>
+
+
+    <div class="footer-links">
+
+      <a href="mailto:berylmunyao8@gmail.com">
+        Email
+      </a>
+
+      <a
+        href="https://github.com/Mwesh2004/my-portfolio"
+        target="_blank"
+        rel="noopener"
+      >
+        GitHub
+      </a>
+
+      <a href="#top">
+        Back to top ↑
+      </a>
+
+    </div>
+
+
+    <small>
+      © 2026 BerylBytes. Built with curiosity.
+    </small>
+
   </footer>
 
+
+  <!-- MOBILE MENU -->
+
+  <div class="mobile-menu">
+
+    <button class="close-menu">
+      ×
+    </button>
+
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#capabilities">Capabilities</a>
+    <a href="#contact">Contact</a>
+
+  </div>
+
+
   <script src="script.js"></script>
+
 </body>
 </html>
