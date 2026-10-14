@@ -17,6 +17,7 @@ function setMenuOpen(open) {
   if (!menu || !menuButton) return;
   menu.classList.toggle("open", open);
   menuButton.setAttribute("aria-expanded", String(open));
+  menuButton.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
   menu.setAttribute("aria-hidden", String(!open));
   document.body.classList.toggle("menu-open", open);
   if (open) {
