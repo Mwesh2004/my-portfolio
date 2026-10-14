@@ -1748,3 +1748,127 @@ main[id] {
     transform: none;
   }
 }
+
+
+/* VISUAL REFINEMENT — portfolio redesign */
+body.menu-open {
+  overflow: hidden;
+}
+
+.nav {
+  border-bottom-color: rgba(255, 255, 255, 0.09);
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.12);
+}
+
+.hero {
+  isolation: isolate;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 em {
+  color: transparent;
+  background: linear-gradient(100deg, var(--green) 8%, #8debd0 48%, #b49bff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none;
+}
+
+.btn-primary {
+  border: 1px solid rgba(24, 215, 160, 0.45);
+  background: linear-gradient(115deg, #18d7a0, #8be8ce);
+  color: #06110d;
+  box-shadow: 0 12px 35px rgba(24, 215, 160, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  filter: saturate(1.08);
+  box-shadow: 0 16px 42px rgba(24, 215, 160, 0.2);
+}
+
+.project {
+  border-radius: 14px;
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project:hover {
+  border-color: rgba(24, 215, 160, 0.3);
+  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.2);
+}
+
+.project-art {
+  isolation: isolate;
+}
+
+.project-art::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(135deg, rgba(255,255,255,0.035), transparent 45%, rgba(24,215,160,0.035));
+  z-index: 1;
+}
+
+.about-cards article,
+.cap-list > div {
+  transition: background-color 0.25s ease, padding-left 0.25s ease;
+}
+
+.about-cards article:hover {
+  background: rgba(24, 215, 160, 0.035);
+}
+
+.cap-list > div:hover {
+  padding-left: 8px;
+  background: linear-gradient(90deg, rgba(24,215,160,0.04), transparent);
+}
+
+.contact-form {
+  border-radius: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  min-height: 44px;
+}
+
+.submit-btn:disabled {
+  opacity: 0.72;
+  cursor: wait;
+  transform: none;
+}
+
+@media (max-width: 560px) {
+  .nav {
+    height: 68px;
+    padding-inline: 20px;
+  }
+
+  .hero h1 {
+    letter-spacing: -0.065em;
+    line-height: 0.98;
+  }
+
+  .project {
+    border-radius: 10px;
+  }
+
+  .project-meta {
+    gap: 12px;
+    font-size: 9px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-primary,
+  .project,
+  .about-cards article,
+  .cap-list > div {
+    transition: none;
+  }
+}
