@@ -40,8 +40,27 @@ mobileLinks.forEach((link) => {
 });
 
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape" && menu?.classList.contains("open")) {
+  if (!menu?.classList.contains("open")) return;
+
+  if (event.key === "Escape") {
     setMenuOpen(false);
+    return;
+  }
+
+  if (event.key === "Tab") {
+    const focusable = menu.querySelectorAll(
+      'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
+    );
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last?.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first?.focus();
+    }
   }
 });
 
