@@ -10,6 +10,15 @@
   />
 
   <meta name="theme-color" content="#08090b" />
+  <meta name="color-scheme" content="dark" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="BerylBytes — Beryl Munyao" />
+  <meta property="og:description" content="Business-minded digital creative exploring technology, design, communication and cybersecurity." />
+  <meta property="og:url" content="https://berylbytes.vercel.app/" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="BerylBytes — Beryl Munyao" />
+  <meta name="twitter:description" content="Business-minded digital creative exploring technology, design, communication and cybersecurity." />
+  <link rel="canonical" href="https://berylbytes.vercel.app/" />
 
   <title>BerylBytes — Beryl Munyao</title>
 
@@ -24,7 +33,8 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
   <!-- Background -->
   <div class="noise"></div>
@@ -53,7 +63,7 @@
       AVAILABLE FOR WORK
     </div>
 
-    <button class="menu-btn" aria-label="Open menu">
+    <button class="menu-btn" type="button" aria-label="Open navigation menu" aria-controls="mobile-navigation" aria-expanded="false">
       <span></span>
       <span></span>
     </button>
@@ -61,7 +71,7 @@
   </header>
 
 
-  <main id="top">
+  <main id="main-content">
 
     <!-- HERO -->
     <section class="hero">
@@ -770,9 +780,9 @@
 
   <!-- MOBILE MENU -->
 
-  <div class="mobile-menu">
+  <nav class="mobile-menu" id="mobile-navigation" aria-label="Mobile navigation" aria-hidden="true">
 
-    <button class="close-menu">
+    <button class="close-menu" type="button" aria-label="Close navigation menu">
       ×
     </button>
 
@@ -781,7 +791,7 @@
     <a href="#capabilities">Capabilities</a>
     <a href="#contact">Contact</a>
 
-  </div>
+  </nav>
 
 
   <script src="script.js"></script>
